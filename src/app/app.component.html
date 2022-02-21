@@ -1,0 +1,6 @@
+<div class="container-fluid m-0 bg-dark border border-danger h-100 border-5">
+  <div class="row">
+    <app-first-to-do (childData)="reciveDataFromChild($event)"></app-first-to-do>
+    <app-second-to-do [parentData]="item"></app-second-to-do>
+  </div>
+</div>

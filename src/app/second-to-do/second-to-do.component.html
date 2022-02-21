@@ -1,0 +1,11 @@
+<div class="bg-light mb-3 p-5 h-100">
+  <div class="m-3 h-100 p-5  border border-warning border-5">
+  <p class="text-center ">Let's Get Some Works Done!</p>
+  <div *ngFor="let task of parentData,let i = index" >
+    <button class="btn btn-light btn-outline-dark" id="btn1" (click)="complete(i)">Complete</button>
+      <button class="btn btn-light btn-outline-dark me-2" id="btn2" (click)="delete(i)">delete</button>
+     <span class="task   ms-3"> {{task}}</span>
+  </div>
+  </div>
+  </div>
+
